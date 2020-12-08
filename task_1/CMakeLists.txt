@@ -19,12 +19,6 @@ add_custom_command(
 
 add_custom_target( MustRunPreparing DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/gen/A/index.h COMMENT "Checking if re-generation is required" )
 
-cmake_minimum_required(VERSION 3.19)
-
-project(SampleProject)
-
-
-
 add_subdirectory(B)
 
 add_executable(
