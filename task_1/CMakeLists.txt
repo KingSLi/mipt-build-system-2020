@@ -12,7 +12,7 @@ file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/gen/A)
 
 add_custom_command( 
   OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/gen/A/index.h
-  COMMAND python ${PROJECT_SOURCE_DIR}/A/preparing.py ${CMAKE_CURRENT_BINARY_DIR}/gen/A/index.h
+  COMMAND ${PROJECT_SOURCE_DIR}/A/preparing.py ${CMAKE_CURRENT_BINARY_DIR}/gen/A/index.h
   DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/A/preparing.py
   COMMENT "Do preparing"
 )
